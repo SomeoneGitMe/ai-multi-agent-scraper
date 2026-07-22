@@ -13,3 +13,8 @@ A full-stack web application that utilizes a squad of AI agents to scrape, analy
 - AI/LLM: Groq (Llama-3.1-8b-instant) via the OpenAI Python SDK
 - Frontend: HTML, Tailwind CSS, Vanilla JS, Marked.js
 - Architecture: Multi-Agent Orchestration, Asynchronous API
+
+💻 Engineering Highlights
+- LLM Function Calling (Tool Use): Configured the LLM to return structured JSON objects that map directly to Python functions, allowing the AI to autonomously execute add_item and get_inventory operations against the database.
+- Bulletproof Error Handling: Implemented try/except blocks to catch API rate limits and JSON parsing failures, ensuring the FastAPI server never crashes during LLM inference.
+- Security First Approach: Utilized python-dotenv for environment variable management, ensuring API keys are never hardcoded and are safely ignored by Git.
